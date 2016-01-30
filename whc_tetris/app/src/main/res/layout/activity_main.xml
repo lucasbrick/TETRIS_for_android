@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/deleteLineCount"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="삭제 라인 수 : 0"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textStyle="bold"/>
+    <com.lucasbrick.whc_tetris.version2.TetrisView
+        android:id="@+id/tetrisView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"/>
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"/>
+        <ImageButton
+            android:id="@+id/down"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down"/>
+        <ImageButton
+            android:id="@+id/rotate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rotate"/>
+        <ImageButton
+            android:id="@+id/spacebar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spacebar"/>
+    </LinearLayout>
+</LinearLayout>
